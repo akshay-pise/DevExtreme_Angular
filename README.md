@@ -9,14 +9,55 @@ Reference link:- install the angular (https://angular.io/guide/setup-local) and 
   Install the devextreme and devextreme-angular npm packages:
       npm install devextreme@20.2 devextreme-angular@20.2 --save --save-exact  
       
+  Configure Stylesheets:-
+  			Open the angular.json file and reference dx.common.css and a predefined theme stylesheet (dx.light.css in the code below).
+  
+  {
+  "projects": {
+    "ProjectName": {
+      "architect": {
+        "build": {
+          "options": {
+            "styles": [
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.light.css",
+              "src/styles.css"
+            ],
+            ...
+          },
+          ...
+        },
+        ...
+      }
+    },
+    ...
+  },
+  ...
+}
+      
 3.Then, go to the src folder, open the index.html file, and add the dx-viewport class to the <body> tag.
-                        <html lang="en">
+                      										<html lang="en">
 														<head>
 														</head>
 														<body class="dx-viewport">
 																<app-root></app-root>
 														</body>
 												</html>
+	
+	JSZip Registration:-
+				DevExtreme requires the JSZip library. Since JSZip v3.3.0, the library does not need to be registered. If you use an earlier version, register 					JSZip in the tsconfig.json file:
+	{
+	  ...
+	  "compilerOptions": {
+	    ...
+	    "paths": {
+	      "jszip": [
+		"node_modules/jszip/dist/jszip.min.js"
+	      ]
+	    }
+	  }
+	}
+	
 	
 4. Import DevExtreme Modules
 	
