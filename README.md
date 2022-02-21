@@ -1,5 +1,5 @@
 # DevExtreme_Angular
-note:- install the angular (https://angular.io/guide/setup-local) and adding the without adding devextreme/cli
+Reference link:- install the angular (https://angular.io/guide/setup-local) and adding the without adding devextreme/cli
 # steps of add devextreme v20.2 on Angular 11.2.5
 1. create angular project using create command
       ng new devangu    //devangu is project name  
@@ -40,28 +40,20 @@ note:- install the angular (https://angular.io/guide/setup-local) and adding the
 	
 	
 ####--------- Add the DevExtreme Layout to an Existing Application.-----------####
-	( https://js.devexpress.com/Documentation/20_2/Guide/Common/DevExtreme_CLI/#DevExtreme_Application/Add_the_DevExtreme_Layout_to_an_Existing_Application)
+	
+	Reference link:- ( https://js.devexpress.com/Documentation/20_2/Guide/Common/DevExtreme_CLI/#DevExtreme_Application/Add_the_DevExtreme_Layout_to_an_Existing_Application)
 	
 	1. follow 5 step of add devextreme on angular
 	
 	2. devextreme add angular-template [--layout][--empty][--resolve-conflicts]
 	
 							Arguments:
-												--layout
-												Specifies the DevExtreme layout to add. Available values:
-
-												side-nav-outer-toolbar (default)
-												side-nav-inner-toolbar
-												Both layouts are illustrated in the Layouts article.
-
-												--empty
-												Specifies whether to skip sample views generation (default: false).
-
-												--resolve-conflicts
-												Specifies whether to override the existing app.component or create a component with another name. Available values:
-
-												createNew (default)
-												override (NOTE: all changes in the overridden files will be lost)
+									--layout
+									Specifies the DevExtreme layout to add. Available values:															side-nav-outer-toolbar (default)																		side-nav-inner-toolbar																				Both layouts are illustrated in the Layouts article.																--empty																						Specifies whether to skip sample views generation (default: false).														--resolve-conflicts
+	
+Specifies whether to override the existing app.component or create a component with another name. Available values:
+	
+									createNew (default)																				override (NOTE: all changes in the overridden files will be lost)
 	
 	
 	
